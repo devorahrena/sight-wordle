@@ -1,1 +1,27 @@
-<h1>Hello world</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sight Wordle</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+  <div class="game">
+    <div class="row">
+      <input id="11" class="box" type="text" maxlength="1" onkeyup="moveCursor(this.id)"></input>
+      <input id="12" class="box" type="text" maxlength="1" onkeyup="moveCursor(this.id)"></input>
+      <input id="13" class="box" type="text" maxlength="1" onkeyup="moveCursor(this.id)"></input>
+    </div>
+  </div>
+
+  <script>
+    function moveCursor(id) {
+      document.getElementById(id).nextSibling.focus();
+    }
+  </script>
+</body>
+
+</html>
