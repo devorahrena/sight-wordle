@@ -1,7 +1,6 @@
 //from Michael Beckius https://codepen.io/bananascript/pen/EyZeWm
 
 'use strict';
-
 function confetti() {
   // Globals
   var random = Math.random
